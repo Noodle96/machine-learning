@@ -43,11 +43,11 @@ This article focuses on data modelling. It assumes you have already collected da
 | *Machine learning projects can be broken into three steps, data collection, data modelling and deployment. This article focuses on steps within the data modelling phase and assumes you already have data. Full version on [Whimsical](https://whimsical.com/9g65jgoRYTxMXxDosndYTB).* |
 
 1. [**Problem definition**](https://github.com/Noodle96/machine-learning/blob/main/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#1-problem-definitionrephrase-your-business-problem-as-a-machine-learning-problem) — What business problem are we trying to solve? How can it be phrased as a machine learning problem?
-2. [**Data**](https://https://github.com/Noodle96/machine-learning/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#2-dataif-machine-learning-is-getting-insights-out-of-data-what-data-do-you-have) — If machine learning is getting insights out of data, what data we have? How does it match the problem definition? Is our data structured or unstructured? Static or streaming?
-3. [**Evaluation**](https://https://github.com/Noodle96/machine-learning/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#3-evaluationwhat-defines-success-is-a-95-accurate-machine-learning-model-good-enough) — What defines success? Is a 95% accurate machine learning model good enough?
-4. [**Features**](https://https://github.com/Noodle96/machine-learning/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#4-featureswhat-features-does-your-data-have-and-which-can-you-use-to-build-your-model) — What parts of our data are we going to use for our model? How can what we already know influence this?
-5. [**Modelling**](https://https://github.com/Noodle96/machine-learning/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#5-modellingwhich-model-should-you-choose-how-can-you-improve-it-how-do-you-compare-it-with-other-models) — Which model should you choose? How can you improve it? How do you compare it with other models?
-6. [**Experimentation**](https://https://github.com/Noodle96/machine-learning/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#6-experimentationwhat-else-could-we-try-how-do-the-other-steps-change-based-on-what-weve-found-does-our-deployed-model-do-as-we-expected) — What else could we try? Does our deployed model do as we expected? How do the other steps change based on what we’ve found?
+2. [**Data**](https://github.com/Noodle96/machine-learning/blob/main/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#2-dataif-machine-learning-is-getting-insights-out-of-data-what-data-do-you-have) — If machine learning is getting insights out of data, what data we have? How does it match the problem definition? Is our data structured or unstructured? Static or streaming?
+3. [**Evaluation**](https://github.com/Noodle96/machine-learning/blob/main/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#3-evaluationwhat-defines-success-is-a-95-accurate-machine-learning-model-good-enough) — What defines success? Is a 95% accurate machine learning model good enough?
+4. [**Features**](https://github.com/Noodle96/machine-learning/blob/main/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#4-featureswhat-features-does-your-data-have-and-which-can-you-use-to-build-your-model) — What parts of our data are we going to use for our model? How can what we already know influence this?
+5. [**Modelling**](https://github.com/Noodle96/machine-learning/blob/main/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#5-modellingwhich-model-should-you-choose-how-can-you-improve-it-how-do-you-compare-it-with-other-models) — Which model should you choose? How can you improve it? How do you compare it with other models?
+6. [**Experimentation**](https://github.com/Noodle96/machine-learning/blob/main/01-getting-ready-to-machine-learning/6-step-framework-for-approaching-machine-learning-projects.md#6-experimentationwhat-else-could-we-try-how-do-the-other-steps-change-based-on-what-weve-found-does-our-deployed-model-do-as-we-expected) — What else could we try? Does our deployed model do as we expected? How do the other steps change based on what we’ve found?
 
 Let’s dive a little deeper in each.
 
@@ -171,7 +171,7 @@ For regression problems (where you want to predict a number), you’ll want to m
 - **Mean absolute error (MAE)** — The average difference between your model's predictions and the actual numbers.
 - **Root mean square error (RMSE)** — The square root of the average of squared differences between your model's predictions and the actual numbers.
 
-Use RMSE if you want large errors to be more significant. Such as, predicting a house to be sold at $300,000 instead of $200,000 and being off by $100,000 is more than twice as bad as being off by $50,000. Or MAE if being off by $100,000 is twice as bad as being off by $50,000.
+Use RMSE if you want large errors to be more significant. Such as, predicting a house to be sold at S/.300,000 instead of S/.200,000 and being off by S/.100,000 is more than twice as bad as being off by S/.50,000. Or MAE if being off by S/.100,000 is twice as bad as being off by S/.50,000.
 
 Recommendation problems are harder to test in experimentation. One way to do so is to take a portion of your data and hide it away. When your model is built, use it to predict recommendations for the hidden data and see how it lines up.
 
@@ -232,7 +232,7 @@ What then?
 
 Ensembles of decision trees and gradient boosted algorithms (fancy words, definitions not important for now) usually work best on structured data, like Excel tables and dataframes. Look into random forests, [XGBoost](https://xgboost.ai/) and [CatBoost](https://catboost.ai/).
 
-| ![tools you can use for machine learning](../images/ml101-6-step-ml-framework-tools.png) | 
+| ![tools you can use for machine learning](../images/6-step-ml-framework-tools.png) | 
 |:--:| 
 | *A non-exhaustive example of all the different tools you can use for machine learning/data science.* |
 
